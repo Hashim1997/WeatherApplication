@@ -80,10 +80,14 @@ dependencies {
     //local storage
     implementation(libs.androidx.datastore.preferences)
 
+    //jetpack room
     implementation(libs.androidx.room.runtime)
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 
+    //workManager
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.hilt.work)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
